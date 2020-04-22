@@ -1,0 +1,149 @@
+commit 969fd1d42535636bf84e55d8785e48ad7d3d212c
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Fri Apr 5 12:56:45 2019 +0200
+
+    Changed how maxprobe() and sumprobe() work, they now count from relevant tables, where before the chaining table's max and sum were calculated using linear tables
+
+commit e28c275f2b2ea8fc8a3eb3a5727671bff1b62260
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 14:30:36 2019 +0200
+
+    Added javadocs for sort.java
+
+commit 225820f30e3883bdb24f3e1e911f0c6c86be5dfd
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 14:24:37 2019 +0200
+
+    Added javadocs for len() method
+
+commit e69c5ce070d3e821943bc9a0649b5294c3268a3f
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 13:51:52 2019 +0200
+
+    Changed the calculation of load factor. Now it calculates the proper quantity
+
+commit 806368667edd2328e1d697b2fa4efd392574bdbe
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 13:13:00 2019 +0200
+
+    Changed how chaining resolution scheme counts inserts
+
+commit fea71f1f4fec947ee8aee52c9489d7bf2ef7bdb4
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 11:20:49 2019 +0200
+
+    Added new line statement to file writer in the sort java file, this is to make it easier to plot in gnuplot. Now everytime a data point is appended a on a new line the comma is appended so on and so forth.
+
+commit 3cab3967dfa9b89229092edd574c1d9cc73fa8a1
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 10:57:40 2019 +0200
+
+    Created sorting class to sort data within SampleData.csv into relevant csv files to make graphing it easier. Fixed output of average search probes by making it print out the decimals
+
+commit 62f247d6ee4e85ee1696d6211fcada2f131032ed
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Thu Apr 4 09:13:29 2019 +0200
+
+    Changed how HashApp takes in data
+
+commit e4691c2b3d9ef9f2c3e5a0699884d3e58908ad10
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Tue Apr 2 15:20:40 2019 +0200
+
+    Changed primality check in HashApp.java, created auxilary class for bash script, that stores all the test values for the table size from 653 t0 1009
+
+commit 7ba40e5a61ccac8b7845c25e2c469c8e2bfa04e3
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Tue Apr 2 10:04:54 2019 +0200
+
+    Improved primality test
+
+commit ec5dae500918b1e268d807956665cec6ed6b62dd
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Tue Apr 2 09:57:35 2019 +0200
+
+    Debugged search probe count by adding arraylist to keep track of maximum counts and total counts
+
+commit 1851ddd94ef96654658fe46cf94a7f270d9e6d12
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 21:49:59 2019 +0200
+
+    Corrected output of load factor where it outputed zero everytime
+
+commit 13ec1587dbebc5367a7a03dd5281ab6e1f2077ba
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 21:22:41 2019 +0200
+
+    Fixed bug with findKey when searching in the table using chaining
+
+commit d3cdcf4ec28bbf38354eef09143d0be50446dcd5
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 21:17:52 2019 +0200
+
+    added method next that takes in a node object and returns its pointer node object
+
+commit 531141355559e22e02ac763cea36da6db97e9232
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 14:34:51 2019 +0200
+
+    Debbuged findKey method by adding getData method in Linked list class
+
+commit 0d5a93214cb929bb97bf20d9b5e24fb4fcc63fa7
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 14:26:03 2019 +0200
+
+    Added list iterator method next() into linked list class
+
+commit 784b3e1bff2c0e71e8918366a8d9458a1ccca44a
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 10:10:12 2019 +0200
+
+    Added printList method to Linked list class
+
+commit acefade8ecc05568565dd12586eef8dfa24c0f3c
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 09:50:23 2019 +0200
+
+    Implementation of chaining resolution
+
+commit f7a64d863e95047fa67663a7af2821d533fa612e
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Mon Apr 1 09:40:32 2019 +0200
+
+    Created linked list class
+
+commit 10b81699ea3cea72d500fe7e1e41409404a1c44f
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Sat Mar 30 21:57:06 2019 +0200
+
+    Added error message for for when number of probes excedes table size
+
+commit 3dba6b664fb9da7f018391c8690fc9775229a909
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Sat Mar 30 21:53:10 2019 +0200
+
+    Added error message if table is full for the linear resolution
+
+commit 5fa72c8952719cfe69b6b3e978c9c94d5be3e27e
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Wed Mar 27 15:40:20 2019 +0200
+
+    Added print statement for load factor
+
+commit 33a4cd960b7ea4900c0f6b5eb42dae7b049c8eff
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Wed Mar 27 15:29:52 2019 +0200
+
+    Added shuffle, FindKey and Quadratic methods into java file, HashApp
+
+commit a16019d95aacc41bcce0490f29bee831c7429e87
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Tue Mar 26 14:40:57 2019 +0200
+
+    Finished first debug for compiling
+
+commit eb29edf01f67dafdf71eab11c69650ab38751bf7
+Author: Khulekani <jlxkhu003@myuct.ac.za>
+Date:   Tue Mar 26 14:29:19 2019 +0200
+
+    First compile

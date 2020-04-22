@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"aux"},{"p":"<Unnamed>","l":"HashApp"},{"p":"<Unnamed>","l":"LinkedList"},{"p":"<Unnamed>","l":"LinkedList.Node"},{"p":"<Unnamed>","l":"sort"}]
