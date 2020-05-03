@@ -1,0 +1,28 @@
+{
+  "fitbit": {
+    "appUUID": "4853f018-ae9a-4f09-b929-817e7a9ea522",
+    "appType": "clockface",
+    "appDisplayName": "always-on-digital",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "run_background",
+      "access_activity",
+      "access_user_profile",
+      "access_location"
+    ],
+    "buildTargets": [
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "always-on-digital"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}

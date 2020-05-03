@@ -1,0 +1,37 @@
+.background {
+  viewport-fill: white;
+}
+
+.markercolour {
+  fill: black;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 30%;
+  fill: mediumslateblue;
+}
+
+
+
+#hrField {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 53%;
+  y: 10%;
+  fill: mediumslateblue;
+}
+
+.dad {
+  font-family: Seville-Regular;
+  font-size: 26;
+  text-anchor: middle;
+  text-length: 8;   
+}
+
