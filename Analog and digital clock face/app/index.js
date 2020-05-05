@@ -1,10 +1,13 @@
 import clock from "clock";
 import document from "document";
-import { preferences } from "user-settings";
+import { units } from "user-settings";
 import { HeartRateSensor } from "heart-rate";
 import { me } from "appbit";
+import { display } from "display";
 import { BodyPresenceSensor } from "body-presence";
+import { today } from 'user-activity';
 import * as messaging from "messaging";
+import { battery } from "power";
 import * as util from "../common/utils";
 import * as fs from "fs";
 
@@ -20,17 +23,16 @@ let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const myLabel = document.getElementById("myLabel");
 const dayandDateField = document.getElementById("dayandDateField");
 let hrField = document.getElementById("hrField");
+let stepsField = document.getElementById("stepsField");
+let backgroundGradient = document.getElementById("backgroundGradient");
+let calsField = document.getElementById("calsField");
+let batteryPercent = document.getElementById("batteryPercent");
+let batteryMeter = document.getElementById("batteryMeter");
+let dataProgress  = [];
 
 const hourhand = document.getElementById("hourhand");
 const minutehand = document.getElementById("minutehand");
 const secondhand = document.getElementById("secondhand");
-
-
-// Rotate the hands every tick
-
-
-// Update the clock every tick event
-
 
 let settings = loadSettings();
 function loadSettings() {
@@ -39,7 +41,9 @@ function loadSettings() {
   }
   catch (ex) {
     return {
-      clockDisplay: "12h"
+      accentcolor: "dodgerblue",
+      markercolor: "lightgrey",
+      showBackgroundGradient: true
     };
   }
 }
@@ -47,6 +51,42 @@ function loadSettings() {
 me.addEventListener("unload", saveSettings);
 function saveSettings() {
   fs.writeFileSync(SETTINGS_FILE, settings, SETTINGS_TYPE);
+}
+
+messaging.peerSocket.onmessage = evt => {
+  if (evt.data.newValue){
+    switch (evt.data.key) {
+      case "accentcolor":
+        settings.accentcolor = JSON.parse(evt.data.newValue); 
+        setColours(settings.accentcolor, settings.markercolor);
+        break;
+      case "markercolor":
+        settings.markercolor = JSON.parse(evt.data.newValue); 
+        setColours(settings.accentcolor, settings.markercolor);
+        break;
+      case "showBackgroundGradient":
+        settings.showBackgroundGradient = JSON.parse(evt.data.newValue); 
+        setBackgroundGradient(settings.showBackgroundGradient, settings.accentcolor);
+        break;
+    }    
+  }
+};
+
+function setColours(accentcolour, markercolour) {
+  let elements = document.getElementsByClassName("accentcolour");
+  elements.forEach(function (element) {
+  element.style.fill = accentcolour;
+  });
+  backgroundGradient.gradient.colors.c1 = accentcolour;
+
+  elements = document.getElementsByClassName("markercolour");
+  elements.forEach(function (element) {
+  element.style.fill = markercolour;
+  });
+}
+
+function setBackgroundGradient(showBackgroundGradient, accentColour) {
+  backgroundGradient.gradient.colors.c1 = (showBackgroundGradient ? accentColour : "black");
 }
 
 let hrm = new HeartRateSensor();
@@ -69,22 +109,28 @@ body.start();
 clock.granularity = "seconds";
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
-  let today = evt.date;
-  let Hours = today.getHours();
+  let Hours = evt.date.getHours();
   
   hourhand.groupTransform.rotate.angle = (30 * (evt.date.getHours() % 12)) + (0.5 * evt.date.getMinutes());
   minutehand.groupTransform.rotate.angle = (6 * evt.date.getMinutes()) + (0.1 * evt.date.getSeconds());
   secondhand.groupTransform.rotate.angle = (6 * evt.date.getSeconds());  
 
-  if (settings.clockDisplay === "12h") {
+  if (units.clockDisplay === "12h") {
     // 12h format
     Hours = Hours % 12 || 12;
   } else {
     // 24h format
     Hours = util.zeroPad(Hours);
   }
-  let Mins = util.zeroPad(today.getMinutes());
-  let date = util.zeroPad(today.getDate());
+  let Mins = util.zeroPad(evt.date.getMinutes());
+  let date = util.zeroPad(evt.date.getDate());
   myLabel.text = `${Hours}:${Mins}`;
   dayandDateField.text = `${days[evt.date.getDay()]} ${date}`;
+  batteryPercent.text = `${battery.chargeLevel}%`
+  batteryMeter.sweepAngle = 2.7 * battery.chargeLevel;
+  stepsField.text = today.adjusted.steps;
+  calsField.text = today.adjusted.calories;
 }
+
+setColours(settings.accentcolor, settings.markercolor);
+setBackgroundGradient(settings.showBackgroundGradient, settings.accentcolor);

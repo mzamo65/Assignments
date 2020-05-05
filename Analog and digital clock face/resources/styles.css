@@ -3,19 +3,38 @@
 }
 
 .markercolour {
-  fill: black;
+  fill: mediumslateblue;
+}
+
+.accentcolour {
+  fill: orange;
+}
+
+.icon {
+  x: 50%-7;
+  y: 18%;
+  width: 20;
+  height: 20;
+  fill: mediumslateblue;
+}
+
+.hourmarker24text {
+  x: 0%;
+  y: -36%;
+  font-family: Seville-Bold;
+  font-size: 15;
+  text-anchor: middle;
 }
 
 #myLabel {
   font-size: 80;
-  font-family: System-Bold;
+  font-family: Colfax-Bold;
   text-length: 32;
   text-anchor: middle;
   x: 50%;
   y: 30%;
   fill: mediumslateblue;
 }
-
 
 
 #hrField {
@@ -29,9 +48,42 @@
 }
 
 .dad {
-  font-family: Seville-Regular;
-  font-size: 26;
+  font-family: Seville-Bold;
+  font-size: 18;
   text-anchor: middle;
   text-length: 8;   
+}
+
+.cycleview {
+  font-family: Seville-Bold;
+  font-size: 15;
+  text-anchor: middle;
+  x: 50%;
+  y: 80%;
+  text-length: 8;   
+}
+
+.Bcycleview {
+  font-family: Seville-Bold;
+  font-size: 15;
+  text-anchor: middle;
+  opacity:1;
+  x: 0;
+  y: 50;
+  text-length: 8;   
+}
+
+.hourmarker24tickS {
+  x: 0%;
+  y: -45%;
+  width: 1;
+  height: 4; 
+}
+
+.hourmarker24tickL {
+  x: 0%;
+  y: -45%;
+  width: 2;
+  height: 4; 
 }
 

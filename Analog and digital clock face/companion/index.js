@@ -9,6 +9,14 @@ messaging.peerSocket.onclose = () => {
   console.log("Companion Socket Closed");
 };
 
+settingsStorage.onchange = evt => {
+  let data = {
+    key: evt.key,
+    newValue: evt.newValue
+  };
+  sendVal(data);
+};
+
 // Restore any previously saved settings and send to the device
 function restoreSettings() {
   for (let index = 0; index < settingsStorage.length; index++) {   

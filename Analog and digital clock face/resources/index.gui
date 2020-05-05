@@ -1,9 +1,82 @@
 <svg id="clock">
   <defs>
     <symbol id="con">
-      <rect  x="-43" y="40%" width="85" height="25" fill="mediumslateblue" />
+      <rect  x="-43" y="45%" width="75" height="15" class="markercolour" />
     </symbol>
   </defs>
+  
+  <symbol id="Lmarker">
+      <g transform="rotate(0)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(30)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(60)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(90)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(120)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(150)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(180)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(210)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(240)"><rect class="hourmarker24tickL markercolour"/></g>
+      <g transform="rotate(270)"><rect class="hourmarker24tickL markercolour"/></g>
+      
+    </symbol>
+  
+  <symbol id="Smarker">
+      <g transform="rotate(0)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(5)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(10)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(15)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(20)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(25)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(30)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(35)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(40)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(45)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(50)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(55)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(60)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(65)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(70)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(75)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(80)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(85)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(90)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(95)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(100)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(105)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(110)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(115)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(120)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(125)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(130)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(135)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(140)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(145)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(150)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(155)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(160)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(165)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(170)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(175)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(180)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(185)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(190)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(195)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(200)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(205)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(210)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(215)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(220)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(225)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(230)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(235)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(240)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(245)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(250)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(255)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(260)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(265)"><rect class="hourmarker24tickS markercolour"/></g>
+      <g transform="rotate(270)"><rect class="hourmarker24tickS markercolour"/></g>
+      
+    </symbol>
   
   <defs>
     <symbol id="con2">
@@ -11,34 +84,70 @@
     </symbol>
   </defs>
   
-  <section x="15%" y="35%" width="104" height="104">
+  <section x="11%" y="33%" width="104" height="104">
       <use href="#con">
-        <text id="dayandDateField" class="dad markercolour"/>
+        <text id="dayandDateField" class="dad accentcolour"/>
       </use>
   </section>
   
-  <text id="myLabel"/>
-  <text id="hrField" />
+  <text id="myLabel" class="markercolour"/>
+  <text id="hrField" class="markercolour"/>
   
   <section x="40%" y="5%" width="18" height="18">
       <use href="#con2">
-         <image href="icons8-heart-24(1).png" class="markercolour"  />
+         <image href="stat_hr_open_48px.png" class="markercolour"  />
       </use>
   </section>
   
-  <arc id ="arc" x="170" y="170" width="120" height="120" fill="mediumslateblue"
-    arc-width="10" start-angle="360" sweep-angle="270" />
+  <section x="50%-30" y="50%-30" width="180" height="180">
+    <g transform="translate(50%,50%)">
+    <use href="#Smarker" opacity="0.5">
+      </use>   
+    </g>
+  </section>
   
   <g id="minutehand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-4" y="-110" width="3" height="110" fill="#e0e0e0" />
+    <rect x="$-2" y="-110" width="3" height="110" class="accentcolour" />
   </g>
   <g id="hourhand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-6" y="-75" width="3" height="75" fill="#ffffff" />
+    <rect x="$-2" y="-75" width="3" height="75" class="accentcolour" />
   </g>
   <g id="secondhand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-2" y="-120" width="2" height="120" fill="mediumslateblue" />
+    <rect x="$-2" y="-120" width="2" height="120" class="markercolour" />
   </g>
-  <circle id="outercenterdot"  cx="50%" cy="50%" r="6" fill="mediumslateblue"/>
-  <circle id="innercenterdot"  cx="50%" cy="50%" r="3" fill="white"/>
-  
+  <circle id="outercenterdot"  cx="50%" cy="50%" r="6" class="markercolour" opacity="1"/>
+  <circle id="innercenterdot"  cx="50%" cy="50%" r="3" class="accentcolour" opacity="1"/>
+ 
+ <section x="0" y="0" width="100%" height="100%">
+    <gradientRect id="backgroundGradient" x="0" y="0" width="100%" height="100%" opacity="0.5"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000"/>
+
+    
+ <section x="50%-20" y="50%-20" width="160" height="160">
+        <use id="stats-cycle" href="#cycleview">
+          <use href="#cycleview-item" opacity="0.70">
+            <g transform="translate(50%,50%)">
+              <use href="#Lmarker"/>
+              <line x1="0" y1="0" x2="0" y2="-25%" stroke-width="2" class="markercolour" opacity="1"/>
+              <text id="batteryPercent" class="Bcycleview markercolour" text-length="8"/>
+              <image href="icons8-full-battery-30.png" x="-7" y="-50" class="icon markercolour"/>
+              <arc id="batteryMeter" x="50%-155" y="50%-155" width="150" height="150" arc-width="2" start-angle="360" opacity="1" class="accentcolour"/>
+              <circle cx="0" cy="0" r="4" class="accentcolour" opacity="1"/>
+              <circle cx="0" cy="0" r="2" class="markercolour" opacity="1"/>
+            </g>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_cals_open_48px.png" class="icon markercolour"/>
+            <text id="calsField" class="cycleview markercolour" />            
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_steps_open_48px.png" class="icon markercolour"/>
+            <text id="stepsField" class="cycleview markercolour"/>
+          </use>
+        </use>
+    </section>
+   </section>
 </svg>
