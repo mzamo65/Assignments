@@ -11,10 +11,10 @@
 }
 
 .icon {
-  x: 50%-7;
-  y: 18%;
-  width: 20;
-  height: 20;
+  x: -13;
+  y: -50;
+  width: 30;
+  height: 30;
   fill: mediumslateblue;
 }
 
@@ -49,25 +49,16 @@
 
 .dad {
   font-family: Seville-Bold;
-  font-size: 18;
+  font-size: 25;
   text-anchor: middle;
-  text-length: 8;   
+  text-length: 8; 
+  fill: black;
 }
 
 .cycleview {
   font-family: Seville-Bold;
-  font-size: 15;
+  font-size: 25;
   text-anchor: middle;
-  x: 50%;
-  y: 80%;
-  text-length: 8;   
-}
-
-.Bcycleview {
-  font-family: Seville-Bold;
-  font-size: 15;
-  text-anchor: middle;
-  opacity:1;
   x: 0;
   y: 50;
   text-length: 8;   

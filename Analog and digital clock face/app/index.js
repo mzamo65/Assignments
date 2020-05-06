@@ -6,6 +6,7 @@ import { me } from "appbit";
 import { display } from "display";
 import { BodyPresenceSensor } from "body-presence";
 import { today } from 'user-activity';
+import { goals } from "user-activity";
 import * as messaging from "messaging";
 import { battery } from "power";
 import * as util from "../common/utils";
@@ -21,14 +22,19 @@ let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
-const dayandDateField = document.getElementById("dayandDateField");
+const DateField = document.getElementById("DateField");
+let dayField = document.getElementById("dayField");
 let hrField = document.getElementById("hrField");
 let stepsField = document.getElementById("stepsField");
 let backgroundGradient = document.getElementById("backgroundGradient");
 let calsField = document.getElementById("calsField");
+let calsMeter = document.getElementById("calsMeter");
+let stepsMeter = document.getElementById("stepsMeter");
+let batteryhand = document.getElementById("batteryhand");
+let calshand = document.getElementById("calshand");
+let stepshand = document.getElementById("stepshand");
 let batteryPercent = document.getElementById("batteryPercent");
 let batteryMeter = document.getElementById("batteryMeter");
-let dataProgress  = [];
 
 const hourhand = document.getElementById("hourhand");
 const minutehand = document.getElementById("minutehand");
@@ -89,6 +95,31 @@ function setBackgroundGradient(showBackgroundGradient, accentColour) {
   backgroundGradient.gradient.colors.c1 = (showBackgroundGradient ? accentColour : "black");
 }
 
+function refresh(calsField, stepsField) {
+  let currentDataProg = (today.adjusted.calories || 0);
+  let currentDataGoal = goals.calories;
+  let currentDataArc = (currentDataProg / currentDataGoal) * 100;
+  
+  if (currentDataArc > 100) {
+    currentDataArc = 100;
+  }
+  
+  calsMeter.sweepAngle = -2.7 * currentDataArc;
+  calshand.groupTransform.rotate.angle = 270-(2.7*currentDataArc);
+  
+  currentDataProg = (today.adjusted.steps || 0);
+  currentDataGoal = goals.steps;
+  currentDataArc = (currentDataProg / currentDataGoal) * 100;
+  
+  if (currentDataArc > 100) {
+    currentDataArc = 100;
+  }
+  
+  stepsMeter.sweepAngle = -2.7 * currentDataArc;
+  stepshand.groupTransform.rotate.angle = 270-(2.7*currentDataArc);
+
+}
+
 let hrm = new HeartRateSensor();
 hrm.onreading = () => {
   hrField.text = hrm.heartRate;
@@ -124,13 +155,18 @@ clock.ontick = (evt) => {
   }
   let Mins = util.zeroPad(evt.date.getMinutes());
   let date = util.zeroPad(evt.date.getDate());
+  
   myLabel.text = `${Hours}:${Mins}`;
-  dayandDateField.text = `${days[evt.date.getDay()]} ${date}`;
+  DateField.text = date;
+  dayField.text = days[evt.date.getDay()]
   batteryPercent.text = `${battery.chargeLevel}%`
-  batteryMeter.sweepAngle = 2.7 * battery.chargeLevel;
+  batteryMeter.sweepAngle = -2.7 * battery.chargeLevel;
+  batteryhand.groupTransform.rotate.angle = 270-(2.7*battery.chargeLevel);
   stepsField.text = today.adjusted.steps;
   calsField.text = today.adjusted.calories;
+ 
 }
 
+refresh(calsMeter, stepsMeter);
 setColours(settings.accentcolor, settings.markercolor);
 setBackgroundGradient(settings.showBackgroundGradient, settings.accentcolor);
