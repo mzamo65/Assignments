@@ -3,11 +3,29 @@
 }
 
 .markercolour {
-  fill: mediumslateblue;
+  fill: white;
 }
 
 .accentcolour {
-  fill: orange;
+  fill: white;
+}
+
+.circlecolour {
+  fill: white;
+}
+
+#bat-fill {
+  y: 7;
+  height: 10;
+  x:2;
+  width: 19;
+}
+
+#bat-fill {
+  y: 7;
+  height: 10;
+  x:2;
+  width: 19;
 }
 
 .icon {
@@ -15,7 +33,6 @@
   y: -50;
   width: 30;
   height: 30;
-  fill: mediumslateblue;
 }
 
 .hourmarker24text {
@@ -26,14 +43,11 @@
   text-anchor: middle;
 }
 
-#myLabel {
-  font-size: 80;
-  font-family: Colfax-Bold;
-  text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 30%;
-  fill: mediumslateblue;
+.time {
+  width: 40;
+  height: 60;
+  y: 13%;
+
 }
 
 
@@ -44,7 +58,7 @@
   text-anchor: middle;
   x: 53%;
   y: 10%;
-  fill: mediumslateblue;
+  
 }
 
 .dad {
