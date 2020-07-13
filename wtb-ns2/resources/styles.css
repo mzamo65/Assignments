@@ -1,0 +1,123 @@
+.background {
+  viewport-fill: black;
+}
+
+.markercolour {
+  fill: deeppink;
+}
+
+.accentcolour {
+  fill: dodgerblue;
+}
+
+.d1{}
+
+.d2{}
+
+#bat-fill {
+  y: 7;
+  height: 9;
+  x:2;
+  width: 14;
+}
+
+.line {
+  x1:0;
+  y1:0; 
+  x2:0; 
+  y2:73%-1;
+  stroke-width:6;
+  fill:white;
+}
+
+.bg1 {
+  stroke-width:1;
+  opacity:0.7;
+  y1:69%;
+  y2:100%;
+}
+
+.bg2 {
+  stroke-width:1;
+  opacity: 0.7;
+  x1:50%;
+  x2:100%;
+}
+
+.bg3 {
+  stroke-width:1;
+  opacity: 0.7;
+  x1:0%;
+  x2:50%;
+}
+
+.bg4 {
+  x1:30%;
+  x2:70%;
+  opacity:0.7;
+}
+
+.bg5 {
+  y1:10%;
+  y2:70%;
+  opacity:0.7;
+}
+
+.icon {
+  width: 27;
+  height: 27;
+}
+
+.hr {}
+
+#hrField {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 30;
+  text-anchor: middle;
+  y: 15%;  
+  x: 50%;
+}
+
+#batField {
+  font-size: 16;
+  font-family: System-Bold;
+  text-length: 25;
+  text-anchor: middle;
+  y: 15%;  
+  x: 50%;
+}
+
+.stat {
+  font-size: 20;
+  font-family: System-Bold;
+  text-length: 30;
+  text-anchor: middle;
+  y: 67%;  
+}
+
+#dateField{
+  font-size: 20;
+  font-family: Colfax-Medium;
+  text-length: 32;
+  text-anchor: start;
+  fill: white;
+}
+
+
+
+.line2 {
+  x1:0;
+  y1:0; 
+  x2:0; 
+  y2:28%;
+  opacity:1;
+  stroke-width:6;
+  fill:white;
+}
+
+.time {
+  y:41%+1;
+  width: 25;
+  height: 40;
+}
