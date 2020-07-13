@@ -1,4 +1,4 @@
-Cool digital watch face with 24 colors to choose from, for both background and foreground. 
+Cool digital watch face for the FitBit watch Versa series. With 24 colors to choose from, for both background and foreground. 
 Bottom left and right stats display steps taken and calories, respectively. 
 The top of the triangle can display heart rate, battery percentage or nothing if you're looking for a cleaner design.
 
