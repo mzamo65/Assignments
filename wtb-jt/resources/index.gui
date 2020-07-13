@@ -1,0 +1,295 @@
+<svg class="background">
+  
+  <!-- Grid -->
+  <line x1="10%" x2="10%" class="bg1 accentcolour"/>
+  <line x1="20%" x2="20%" class="bg1 accentcolour"/>
+  <line x1="30%" x2="30%" class="bg1 accentcolour"/>
+  <line x1="40%" x2="40%" class="bg1 accentcolour"/>
+  <line x1="50%" x2="50%" class="bg1 accentcolour"/>
+  <line x1="60%" x2="60%" class="bg1 accentcolour"/>
+  <line x1="70%" x2="70%" class="bg1 accentcolour"/>
+  <line x1="80%" x2="80%" class="bg1 accentcolour"/>
+  <line x1="90%" x2="90%" class="bg1 accentcolour"/>
+  
+  <line y1="10%" y2="10%" class="bg2 accentcolour"/>
+  <line y1="20%" y2="20%" class="bg2 accentcolour"/>
+  <line y1="30%" y2="30%" class="bg2 accentcolour"/>
+  <line y1="40%" y2="40%" class="bg2 accentcolour"/>
+  <line y1="50%" y2="50%" class="bg2 accentcolour"/>
+  <line y1="60%" y2="60%" class="bg2 accentcolour"/>
+  <line y1="70%" y2="70%" class="bg2 accentcolour"/>
+  <line y1="80%" y2="80%" class="bg2 accentcolour"/>
+  <line y1="90%" y2="90%" class="bg2 accentcolour"/>
+  
+  <!-- Border definition -->
+  <symbol id="WE"><line stroke-width="6" fill="white" class="line"/></symbol>
+  <symbol id="NS"><g transform="rotate(90)"><line stroke-width="6" fill="white" class="line"/></g></symbol>
+  
+  <!-- Center gradient -->
+  <section width="100%" height="100%" x="0" y="0">
+    <gradientRect id="backgroundGradientx" x="0%" y="0" width="100%" height="100%" opacity="0.7" class="accentcolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+  </section>
+  
+  <!-- Vertical gradient -->
+  <symbol id="gradV" >
+      <gradientRect id="backgroundGradient2" x="0%" y="0%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+     
+      <gradientRect id="backgroundGradient2" x="0%" y="6%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="12%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="18%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+       
+      <gradientRect id="backgroundGradient2" x="0%" y="24%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="30%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="36%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="42%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="48%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="54%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="60%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="66%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="72%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="0%" y="78%" width="21%" height="25%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+  </symbol>
+  
+  <!-- Horizontal gradient -->
+  <symbol id="gradH">
+    <gradientRect id="backgroundGradient2" x="0%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="4%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="8%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="12%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="16%" y="-1" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="20%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="24%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+      
+      <gradientRect id="backgroundGradient2" x="28%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/> 
+    
+      <gradientRect id="backgroundGradient2" x="33%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/> 
+    
+      <gradientRect id="backgroundGradient2" x="38%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/> 
+    
+      <gradientRect id="backgroundGradient2" x="43%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/> 
+    
+      <gradientRect id="backgroundGradient2" x="48%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/> 
+    
+      <gradientRect id="backgroundGradient2" x="53%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="58%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="63%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="68%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="63%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="68%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+    
+      <gradientRect id="backgroundGradient2" x="73%" y="-1%" width="25%" height="21%" opacity="1" class="markercolour"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000" gradient-opacity2="0"/>
+  </symbol>
+  
+  <!-- Neon underlay -->
+  <section x="0%" y="0%" width="100%" height="100%">
+    <use href="#gradH" width="100%" height="100%"/>
+  </section>
+  
+  <section x="0%" y="80%" width="100%" height="100%">
+    <use href="#gradH" width="100%" height="100%"/>
+  </section>
+  
+  <section x="0%" y="0%" width="100%" height="100%">
+    <use href="#gradV" width="100%" height="100%"/>
+  </section>
+  
+  <section x="80%" y="0%" width="100%" height="100%">
+    <use href="#gradV" width="100%" height="100%"/>
+  </section>
+  
+  
+  <!-- Border -->
+  <section  x="90%" y="10%" >
+    <use href="#NS" />
+  </section>
+  
+  <section x="90%" y="10%">
+    <use href="#WE" />
+  </section>
+  
+  <section x="90%" y="90%" >
+    <use href="#NS" />
+  </section>
+  
+  <section x="10%" y="10%">
+    <use href="#WE" />
+  </section>
+  
+  <!-- Time -->
+  <!-- Digital font background -->
+  <image href="./resources/digital/8.png" x="25%" y="53%" width="60" height="80" fill="#FFFFFF" opacity="0.15" class="bg" />
+  <image href="./resources/digital/8.png" x="55%" y="53%" width="60" height="80" fill="#FFFFFF" opacity="0.15" class="bg" />
+  <image href="./resources/digital/8.png" x="25%" y="21%" width="60" height="80" fill="#FFFFFF" opacity="0.15" class="bg" />
+  <image href="./resources/digital/8.png" x="55%" y="21%"  width="60" height="80" fill="#FFFFFF" opacity="0.15" class="bg" />
+  
+  <!-- Digital font display -->
+  <image id="min1-digital" x="25%" y="53%" fill="white" class="time"/>
+  <image id="min2-digital" x="55%" y="53%" fill="white" class="time"/>
+  <image id="hr1-digital" x="25%" y="21%" fill="white" class="time"/>
+  <image id="hr2-digital" x="55%" y="21%" fill="white" class="time"/>
+  
+  <!-- Non-digital font display -->
+  <text id="min1" x="32%" y="78%" class="num"/>
+  <text id="min2" x="67%" y="78%" class="num"/>
+  <text id="hr1" x="32%" y="48%" class="num"/>
+  <text id="hr2" x="67%" y="48%" class="num"/>
+  
+</svg>
