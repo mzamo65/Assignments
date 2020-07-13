@@ -3,4 +3,3 @@ Social Distancing Regilations, Within the simation these are i.e. only one custo
 shop at a time, only one customer can occupy a block on the grid, and only a single customer can leave the shop at a time.
 
 ![alt text](https://github.com/mzamo65/Assignments/blob/master/Social%20Distancing%20Game/scr.png?raw=true)
-![alt text](https://github.com/mzamo65/Assignments/blob/master/Analog%20and%20digital%20clock%20face/screenshot1.png?raw=true)
