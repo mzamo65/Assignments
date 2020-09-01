@@ -1,0 +1,29 @@
+{
+  "fitbit": {
+    "appUUID": "655cf8fc-dc26-4ef9-9af7-8e18a66d1dff",
+    "appType": "clockface",
+    "appDisplayName": "wtb-db",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_internet",
+      "access_location"
+    ],
+    "buildTargets": [
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "wtb-db"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}
