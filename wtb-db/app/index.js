@@ -149,14 +149,7 @@ if (BodyPresenceSensor) {
 } 
 
 function setHour1(val){
-    if(val !== 0){
-      hrField.style.opacity = 1;
-      hrIcon.style.opacity = 1
-    }
-    else{
-      hrField.style.opacity = 0;
-      hrIcon.style.opacity = 0
-    }
+   
 }
 
 
@@ -176,74 +169,13 @@ function processWeatherData(data){
 }
 
 function stats(val){
-  val = Math.floor(val % 10);
-  
-  distField = document.getElementById("distField3");
-  calsField = document.getElementById("calsField3");
-  stepsField = document.getElementById("stepsField3");
-
-  if(val === 4){
-    distField.style.opacity=0;
-    distField4.style.opacity=1;
-  }
-  
-  if(val!==4){
-    distField.style.opacity=1;
-    distField4.style.opacity=0;
-  }
-  
-  
-  if(val === 6){
-    calsField.style.opacity=0;
-    calsField6.style.opacity=1;
-  }
-  
-  if(val!==6){
-    calsField.style.opacity=1;
-    calsField6.style.opacity=0;
-  }
-  
-  if(val === 9){
-    stepsField.style.opacity=0;
-    stepsField9.style.opacity=1;
-  }
-  
-  if(val!==9){
-    stepsField9.style.opacity=0;
-    stepsField.style.opacity=1;
-  }
-  
-  calsField.text = today.adjusted.calories;
-  stepsField.text = today.adjusted.steps;
-  dist = (preferences.distance === "metric" ? today.adjusted.distance * 0.001 : today.adjusted.distance * 0.000621371);
-  distField.text = Math.floor(dist * 10) / 10;
-  
-  stepsField9.text=stepsField.text;
-  distField4.text=distField.text;
-  calsField6.text=calsField.text;
+ 
   
 }
 
 //sets time for digital font
 function setHours(val) {
-  let bool = false;
-  if (val > 9) {
-    drawDigit(Math.floor(val / 10), hours1);
-    bool = true
-  } else {
-    drawDigit("0", hours1);
-    setHour1(val);
-    bool=true;
-  }
   
-  if(Math.floor(val % 10)=== 0){
-    draw0();
-  }if(Math.floor(val % 10)=== 1){
-    draw(Math.floor(val % 10), hours2S);
-  }if(Math.floor(val % 10) !== 0 && Math.floor(val % 10) !== 1){
-    hours2S.style.opacity=0;
-    drawDigit(Math.floor(val % 10), hours2);
-  }
 }
 
 function setMins(val) {
@@ -252,13 +184,11 @@ function setMins(val) {
 }
 
 function draw0(){
-  hours2.href = `./resources/bold/${0}S.png`; 
+  
 }
 
 function draw(val, place) {
-  place.style.opacity = 1;
-  hours2.style.opacity = 0;
-  place.href = `./resources/bold/${val}.png`;   
+  
 }
 
 //for Digital fonts, changes images for hours and minutes according to what the time is
@@ -297,5 +227,4 @@ clock.ontick = (evt) => {
 
 // Fetch the weather every 30 minutes
 setInterval(fetchWeather, 1 * 1000 * 60);
-processWeatherData(settings.weather);
 setColours(settings.accentcolor, settings.markercolor);
